@@ -1,0 +1,5 @@
+stmt:	r5 = virtualinvoke $r4.<android.net.wifi.WifiInfo: java.lang.String getMacAddress()>()
+	 data 	android.net.wifi.WifiInfo getMacAddress
+			 results::	ImmediateBox(r5) in if r5 == null goto (branch)
+			 results::	ImmediateBox(r5) in return r5
+

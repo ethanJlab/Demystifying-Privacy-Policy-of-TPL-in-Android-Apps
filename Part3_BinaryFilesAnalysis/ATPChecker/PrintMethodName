@@ -1,0 +1,178 @@
+[main] INFO soot.jimple.infoflow.cmd.Flowdroid - Analyzing app /Volumes/Samsung8702/ATPChecker_Final_Version/Dataset/host_apk/ad-networks/com.gta.grandtheftauto.cheats.five_apk/Grand Gangster Cheats_v2.3_apkpure.com.apk (1 of 1)...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.032290512 seconds
+[main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 67 components...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Callback analysis done.
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 71 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.applovin.impl.adview.p$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.fragment.app.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationObject$Size
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.model.AdPreferences$Placement
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationOverrides
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.startapp.common.b.b$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationObject$Size
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.model.AdPreferences$Placement
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationOverrides
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.startapp.common.b.b$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationObject$Size
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.model.AdPreferences$Placement
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationOverrides
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.moat.analytics.mobile.ogury.m
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.Bethmale, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.PavedAremberg, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.tapjoy.internal.gz
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.tapjoy.internal.iq$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.moat.analytics.mobile.ogury.m
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.Bethmale, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.PavedAremberg, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.Eh, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.0c, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.Gl, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.81, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.83, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.internal.api.AudienceNetworkActivityApi, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.2I, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.29, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.MQ, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.LS, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.Ll, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.fragment.app.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.smaato.sdk.core.ui.DoubleClickPreventionListener, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.moat.analytics.mobile.ogury.m
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.Bethmale, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.PavedAremberg, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.smaato.sdk.core.ui.AdContentView, because it is abstract and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 63 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 71 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.applovin.impl.adview.p$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.fragment.app.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationObject$Size
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.model.AdPreferences$Placement
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationOverrides
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.startapp.common.b.b$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationObject$Size
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.model.AdPreferences$Placement
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationOverrides
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.startapp.common.b.b$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationObject$Size
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.model.AdPreferences$Placement
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.startapp.sdk.adsbase.adinformation.AdInformationOverrides
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.moat.analytics.mobile.ogury.m
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.Bethmale, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.PavedAremberg, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.tapjoy.internal.gz
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.tapjoy.internal.iq$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.moat.analytics.mobile.ogury.m
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.Bethmale, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.PavedAremberg, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.Eh, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.0c, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.Gl, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.81, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.83, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.internal.api.AudienceNetworkActivityApi, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.LC, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.2I, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.29, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.MQ, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.LS, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.facebook.ads.redexgen.X.Ll, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.fragment.app.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.smaato.sdk.core.ui.DoubleClickPreventionListener, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class com.moat.analytics.mobile.ogury.m
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.Bethmale, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.presage.PavedAremberg, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.smaato.sdk.core.ui.AdContentView, because it is abstract and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - Timeout reached, stopping the solvers...
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 0 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] WARN soot.jimple.infoflow.android.SetupApplication - Aborted callback collection because of low memory
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] WARN soot.jimple.infoflow.android.SetupApplication - Callback analysis aborted early due to time or memory exhaustion
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Entry point calculation done.
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.web.servlet.tags.UrlTag: java.lang.String createUrl)> -> _SINK_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.orm.hibernate3.support.ClobStringType: int[] sqlTypes)> -> _SINK_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.http.CsrfBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition getCsrfLogoutHandler)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <java.io.File: java.io.File getAbsoluteFile)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.http.FormLoginBeanDefinitionParser: java.lang.String getLoginPage)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <com.google.auth.oauth2.UserCredentials: java.lang.String getClientSecret)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.web.servlet.tags.UrlTag: java.lang.String createUrl)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <java.io.File: java.io.File getCanonicalFile)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.RequestData: java.lang.String getMethod)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.dmfs.oauth2.client.http.requests.ResourceOwnerPasswordTokenRequest: org.dmfs.httpclient.HttpRequestEntity requestEntity)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.concurrent.DelegatingSecurityContextExecutorService: java.util.concurrent.ExecutorService getDelegate)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.annotation.web.builders.HttpSecurity: org.springframework.security.config.'annotation'.web.configurers.HeadersConfigurer headers)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.web.servlet.tags.EscapeBodyTag: java.lang.String readBodyContent)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.http.FormLoginBeanDefinitionParser: java.lang.String getLoginProcessingUrl)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.annotation.web.configurers.LogoutConfigurer: java.util.List getLogoutHandlers)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.RequestData: java.lang.String getHttpVersion)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <com.google.auth.oauth2.DefaultCredentialsProvider: java.io.File getWellKnownCredentialsFile)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.HttpServletRequestImpl: void parseParameters)> -> _SOURCE_
+[main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 66 sources, 201 sinks, and 372 callback methods.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 312 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /Volumes/Samsung8702/ATPChecker_Final_Version/Dataset/host_apk/ad-networks/com.gta.grandtheftauto.cheats.five_apk/Grand Gangster Cheats_v2.3_apkpure.com.apk with 66 sources and 201 sinks...
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using path-sensitive result collection
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 2 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 3.828052674 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 138725 edges
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
+[main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
+[main] WARN soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Running with limited join point abstractions can break context-sensitive path builders
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] ERROR soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Exception during data flow analysis
+java.lang.NullPointerException
+	at soot.jimple.infoflow.android.source.AndroidSourceSinkManager.checkCallbackParamSource(AndroidSourceSinkManager.java:657)
+	at soot.jimple.infoflow.android.source.AndroidSourceSinkManager.getSource(AndroidSourceSinkManager.java:567)
+	at soot.jimple.infoflow.android.source.AndroidSourceSinkManager.getSourceInfo(AndroidSourceSinkManager.java:412)
+	at soot.jimple.infoflow.Infoflow.scanMethodForSourcesSinks(Infoflow.java:1123)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:419)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:239)
+	at soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow.runAnalysis(SetupApplication.java:1253)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1504)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1436)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1382)
+	at soot.jimple.infoflow.cmd.Flowdroid.run(Flowdroid.java:346)
+	at soot.jimple.infoflow.cmd.Flowdroid.analyze(Flowdroid.java:235)
+	at HostAppAnalysis.Hostapp_Util.getHostAppDataFlowDestinationNew(Hostapp_Util.java:40)
+	at HostAppAnalysis.runsilg.main(runsilg.java:24)
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 0 leaks
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated

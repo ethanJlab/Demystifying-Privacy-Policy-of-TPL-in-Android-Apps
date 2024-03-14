@@ -1,0 +1,8 @@
+stmt:	$d0 = virtualinvoke r0.<android.location.Location: double getLatitude()>()
+	 data 	android.location.Location getLatitude
+			 results::	ImmediateBox($d0) in $r12 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d0)
+
+stmt:	$d1 = virtualinvoke r0.<android.location.Location: double getLongitude()>()
+	 data 	android.location.Location getLongitude
+			 results::	ImmediateBox($d1) in $r13 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d1)
+

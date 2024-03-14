@@ -1,0 +1,13 @@
+SPECIAL edge: specialinvoke r0.<java.lang.Object: void <init>()>() in <java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.Runnable)> ==> <java.lang.Object: void <init>()>
+SPECIAL edge: specialinvoke $r1.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.Runnable)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
+FINALIZE edge: null in <java.lang.Object: void <init>()> ==> <java.lang.Object: void finalize()>
+SPECIAL edge: specialinvoke r0.<java.lang.Object: void <init>()>() in <java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.String)> ==> <java.lang.Object: void <init>()>
+SPECIAL edge: specialinvoke $r1.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Thread: void <init>(java.lang.ThreadGroup,java.lang.String)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
+SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Object: void <init>()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
+SPECIAL edge: specialinvoke r0.<java.lang.Exception: void <init>()>() in <java.lang.RuntimeException: void <init>(java.lang.String)> ==> <java.lang.Exception: void <init>()>
+SPECIAL edge: specialinvoke $r1.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.RuntimeException: void <init>(java.lang.String)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
+SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Object: void finalize()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
+SPECIAL edge: specialinvoke r0.<java.lang.Throwable: void <init>()>() in <java.lang.Exception: void <init>()> ==> <java.lang.Throwable: void <init>()>
+SPECIAL edge: specialinvoke $r1.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Exception: void <init>()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
+SPECIAL edge: specialinvoke r0.<java.lang.Object: void <init>()>() in <java.lang.Throwable: void <init>()> ==> <java.lang.Object: void <init>()>
+SPECIAL edge: specialinvoke $r1.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Throwable: void <init>()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
