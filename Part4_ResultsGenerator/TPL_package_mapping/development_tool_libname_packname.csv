@@ -1,0 +1,280 @@
+com.kobakei,Android RateThisApp Library
+com.splunk,Splunk
+com.github.bumptech.glide,Glide Disk LRU Cache Library
+org.altbeacon,Android Beacon Library
+nl.siegmann.epublib,Epublib Core
+com.chauthai.swipereveallayout,SwipeRevealLayout
+io.opencensus,OpenCensus
+com.segment.analytics.android,Apptimize Integration For Segment Android Analytics
+androidx.activity,Activity
+aviary,Aviary Core
+com.google.guava,Guava: Google Core Libraries For Java
+net.mingsoft,MS Basic
+com.otaliastudios,CameraView
+com.android.support,Android Support Library V4
+io.segment.analytics.android,Localytics
+com.pixplicity.easyprefs,EasyPrefs
+com.squareup.retrofit2,Adapter: RxJava
+com.androidplot,Androidplot
+com.fasterxml.jackson.core,Jackson Core
+org.scala-lang,Scala Library
+net.sourceforge.jchardet,Java Port of Mozilla Charset Detector
+commons-io,Apache Commons IO
+com.google.guava,Guava: Google Core Libraries For Java
+com.atlassian.studio,JIRA Studio Theme Core
+com.squareup.okio,Okio
+net.sf.kxml,KXML 2 IS A Small XML Pull Parser Based On The Common XML Pull API
+org.codehaus.groovy,Apache Groovy
+com.github.axet.fbreader,Android FBReader Library
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+org.slf4j,SLF4J API Module
+commons-io,Apache Commons IO
+com.dreamliner,AVLoadingIndicatorView
+org.dom4j,Dom4j
+com.amazonaws,AWS Java SDK For Amazon S3
+me.zhanghai.android.materialprogressbar,MaterialProgressBar Library
+com.amazonaws,AWS Java SDK For Amazon S3
+dnsjava,DNSJava
+com.sendbird.sdk,Sendbird Android SDK
+org.mozilla.components,Mozilla Mobile
+androidx.viewpager,Android Support Library View Pager
+org.jenkins-ci.plugins,Branch API Plugin
+com.sylversky.library,Sugarorm
+org.greenrobot,GreenDAO
+org.skyscreamer,Yoga Core
+com.google.guava,Guava: Google Core Libraries For Java
+com.google.guava,Guava: Google Core Libraries For Java
+com.facebook.litho,LithoCore
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.github.nisrulz,EasyDeviceInfo Base
+androidx.appcompat,Android AppCompat Library
+software.amazon.awscdk, amazon Core
+io.vertx,Vert.x Core
+de.psdev.licensesdialog,LicensesDialog
+me.grantland,Android AutofitTextView Library
+com.orhanobut,Logger
+com.google.guava,Guava: Google Core Libraries For Java
+org.apache.httpcomponents,Apache HttpClient
+com.leanplum,Leanplum Core
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.mikepenz,AboutLibraries Library
+javax.persistence,Javax Persistence API
+org.slf4j,SLF4J API Module
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.krux,Hyperion Core
+com.google.inject,Google Guice Core Library
+com.squareup.picasso,Picasso
+com.github.vicpinm,ActiveAndroidRx
+com.github.bumptech.glide,Glide
+com.github.Raizlabs.DBFlow,DBFlow
+com.esotericsoftware,Kryo
+io.grpc,GRPC Stub
+com.android.support,Android Support Library V4
+de.hdodenhof,CircleImageView
+xmlpull,XML Pull Parsing API
+com.umeng.analytics,Analytics
+com.theartofdev.edmodo,Android Image Cropper
+org.apache.curator,Curator Framework
+androidx.loader,Android Support Library Loader
+com.adobe.air.framework,Airglobal
+com.facebook.android,Facebook Android SDK
+org.junit.jupiter,JUnit Jupiter API
+com.ineunet,Knife Utilities
+oauth.signpost,Signpost Core
+org.onepf,OpenIAB Library
+com.mobidevelop.robovm,RoboPods Flurry Analytics IOS
+javax.mail,JavaMail API JAR
+com.google.guava,Guava: Google Core Libraries For Java
+com.google.guava,Guava: Google Core Libraries For Java
+org.springframework.social,Foundational Module Containing The ServiceProvider Connect Framework and Service API Invocation Support.
+joda-time,Joda Time
+com.google.guava,Guava: Google Core Libraries For Java
+com.amazonaws,AWS Java SDK For Amazon S3
+it.sephiroth.android.library.imagezoom,ImageViewZoom
+com.github.jakob-grabner,Jakob Grabner/Circle Progress View
+io.segment.analytics.android,Countly
+com.google.dagger,Dagger
+com.evernote,Android Job
+org.mobicents.servers.media.codecs,SPEEX
+androidx.appcompat,Android AppCompat Library
+com.mikepenz,FastAdapter Library
+com.android.support,Android Support Library V4
+com.pubnub,PubNub Java SDK
+com.squareup.leakcanary,LeakCanary Android
+androidx.print,Android Support Library Print
+com.google.guava,Guava: Google Core Libraries For Java
+org.jetbrains,JetBrains Java Annotations
+com.optimizely.ab,Optimizely Java SDK
+com.davemorrissey.labs,SubsamplingScaleImageView
+tablelayout,TableLayout
+org.bouncycastle,Bouncy Castle Provider
+io.circe,Circe Parser
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.naver.nid,Naveridlogin Android SDK
+com.github.houbb,Segment
+org.slf4j,SLF4J Simple Binding
+io.intercom.android,Intercom SDK Base
+com.amazonaws,AWS Java SDK For Amazon S3
+com.alipay.sdk,Alipay SDK Java
+org.reactivestreams,Reactive Streams
+com.google.guava,Guava: Google Core Libraries For Java
+com.google.guava,Guava: Google Core Libraries For Java
+com.google.android.material,Material Components For Android
+net.sourceforge.htmlcleaner,HtmlCleaner
+com.afollestad,Material Dialogs
+com.nineoldandroids,Nine Old Androids
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+commons-codec,Apache Commons Codec
+com.onesignal,OneSignal
+bouncer,Bouncer
+de.golfgl.gdxgameanalytics,Gdx Gameanalytics
+com.paypal.sdk,PayPal Android SDK
+com.github.chrisbanes,Chrisbanes/PhotoView
+org.jetbrains.kotlin,Kotlin Stdlib
+io.segment.analytics.android,Amplitude
+com.makeramen,RoundedImageView
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.google.guava,Guava: Google Core Libraries For Java
+gnu-regexp,GNU RegExp
+com.google.guava,Guava: Google Core Libraries For Java
+commons-io,Apache Commons IO
+org.jenkins-ci.plugins,Jenkins Git Plugin
+org.json4s,Json4s Native
+org.scribe,Scribe OAuth Library
+com.google.guava,Guava: Google Core Libraries For Java
+com.bluelinelabs,LoganSquare
+commons-logging,Apache Commons Logging
+com.unity3d.ads,Unity Ads
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.charon.vitamio,Vitamio
+com.google.guava,Guava: Google Core Libraries For Java
+org.renjin,Tools
+com.mixpanel.android,Mixpanel Android
+org.netbeans.api,Mozilla Rhino Patched
+net.minidev,JSON Small and Fast Parser
+org.slf4j,JUL to SLF4J Bridge
+com.facebook.android,Facebook Android SDK
+com.squareup.retrofit2,Retrofit
+pub.devrel,EasyPermissions
+androidx.transition,Android Transition Support Library
+com.zhihu.android,Matisse
+com.appsee,Appsee
+org.scala-lang,Scala Library
+org.webjars.npm,Node Fetch
+androidx.versionedparcelable,VersionedParcelable
+com.nuance,SpeechKit
+com.github.PhilJay,MPAndroidChart
+com.google.firebase,Firebase Messaging
+commons-io,Apache Commons IO
+org.scala-lang,Scala Library
+org.jsoup,Jsoup Java HTML Parser
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+bouncycastle,Legion of The Bouncy Castle Java Cryptography APIs
+com.google.guava,Guava: Google Core Libraries For Java
+com.koushikdutta.async,AndroidAsync
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+jp.wasabeef,RecyclerView Animators
+com.google.guava,Guava: Google Core Libraries For Java
+com.google.guava,Guava: Google Core Libraries For Java
+org.slf4j,SLF4J API Module
+com.urbanairship.android,UrbanAirship SDK
+org.slf4j,SLF4J API Module
+com.github.hotchemi,PermissionsDispatcher
+commons-io,Apache Commons IO
+com.google.zxing,ZXing Core
+org.greenrobot,EventBus
+org.scala-lang,Scala Library
+com.jcraft,JSch
+com.qaprosoft,HockeyApp Utility
+com.google.guava,Guava: Google Core Libraries For Java
+com.squareup.moshi,Moshi
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.atlassian.plugins,Atlassian Plugins Core
+org.scala-lang,Scala Library
+clj-http,Clj HTTP
+io.segment.analytics.android,Quantcast
+se.emilsjolander,StickyListHeaders Library
+org.scala-lang,Scala Library
+eu.codlab,Android AndEngine Fork
+com.fasterxml.jackson.core,Jackson Databind
+com.revenuecat.purchases,Purchases Android
+com.airbnb.android,Lottie
+com.jakewharton.timber,Timber
+com.google.code.gson,Gson
+com.getkeepsafe.relinker,ReLinker
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.android.support,Android Support VectorDrawable
+com.github.rubensousa,GravitySnapHelper
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.rmt.android,Card IO
+org.checkerframework,Checker Qual
+org.slf4j,SLF4J Simple Binding
+com.google.android.gms,Play Services Analytics
+org.apache.thrift,Apache Thrift
+org.netbeans.api,NetBeans API Visual
+org.apache.commons,Apache Commons Lang
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+com.mapbox.mapboxsdk,Mapbox Maps SDK For Android
+me.leolin,ShortcutBadger
+ru.yandex.qatools.ashot,Yandex QATools AShot WebDriver Utility
+com.coditory.sherlock,Sherlock Common
+org.odpi.egeria,Open Connector Framework (OCF)
+com.google.guava,Guava: Google Core Libraries For Java
+com.google.guava,Guava: Google Core Libraries For Java
+com.j256.ormlite,ORMLite Core
+com.google.guava,Guava: Google Core Libraries For Java
+commons-io,Apache Commons IO
+commons-collections,Apache Commons Collections
+org.ccil.cowan.tagsoup,TagSoup
+io.reactivex.rxjava2,RxJava
+com.mikepenz,MaterialDrawer Library
+org.msgpack,MessagePack For Java
+io.micrometer,Micrometer Registry New Relic
+com.squareup.okhttp3,OkHttp
+com.google.guava,Guava: Google Core Libraries For Java
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+io.sentry,Sentry SDK
+com.pushwoosh,Pushwoosh
+com.nostra13.universalimageloader,Universal Image Loader Library
+com.teamagam.androidslidinguppanel,Library
+org.apache.httpcomponents,Apache HttpClient
+org.ocpsoft.prettytime,PrettyTime Core
+com.scottyab,Rootbeer
+com.bluelinelabs,Conductor
+com.google.guava,Guava: Google Core Libraries For Java
+org.apereo.cas,CAS Server Support Geolocation
+com.google.guava,Guava: Google Core Libraries For Java
+com.github.castorflex.smoothprogressbar,SmoothProgressBar Library
+ch.acra,Application Crash Report For Android
+com.google.guava,Guava: Google Core Libraries For Java
+com.fasterxml.jackson.core,Jackson Annotations
+com.google.guava,Guava: Google Core Libraries For Java
+clj-http,Clj HTTP
+com.atlassian.plugins,Atlassian Plugins Core
+org.jdom,JDOM
+com.rudderstack.android.integration,Rudder Integration Braze Android
+org.slf4j,SLF4J API Module
+org.springframework,Spring TestContext Framework
+android.arch.work,Android WorkManager Runtime
+com.caverock,AndroidSVG
+org.jetbrains,JetBrains Java Annotations
+com.google.guava,Guava: Google Core Libraries For Java
+com.senspark.ee,Soomla Store
+com.google.android.gms,Play Services Analytics
+com.google.guava,Guava: Google Core Libraries For Java
+io.realm,Realm Annotations
+com.google.guava,Guava: Google Core Libraries For Java
+com.amazonaws,AWS Java SDK For Amazon S3
+nl.dionsegijn,Konfetti
+com.github.yalantis,UCrop
+com.crittercism,Crittercism Agent For Android
+com.google.code.findbugs,FindBugs JSR305
+com.stripe,Stripe Java
+org,Jaudiotagger
+org.json,JSON In Java
+org.slf4j,SLF4J API Module
+com.clevertap.android,CleverTap Android SDK
+org.renjin,Utilities
+org.holoeverywhere,HoloEverywhere SlidingMenu
+io.fotoapparat,Fotoapparat
+com.fasterxml.jackson.core,Jackson Databind

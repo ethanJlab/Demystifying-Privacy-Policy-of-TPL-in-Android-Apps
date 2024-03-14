@@ -1,0 +1,8 @@
+matplotlib~=2.2.3
+hanlp~=2.1.0b17
+phrasetree~=0.0.8
+nltk~=3.6.7
+html2text~=2020.1.16
+roman~=3.3
+langid~=1.1.6
+beautifulsoup4~=4.10.0

@@ -1,0 +1,21 @@
+org.slf4j,SLF4J API Module
+com.magnet.mmx.ext,MMX Android Smack
+org.wildfly.swarm,WildFly Swarm: Bootstrap
+org.grails.plugins,Grails Twitter Plugin.
+com.amazonaws,AWS Java SDK For Amazon S3
+com.google.guava,Guava: Google Core Libraries For Java
+http-kit,HTTP Kit
+com.amazonaws,AWS Java SDK For Amazon S3
+software.amazon.awscdk, amazon Core
+http-kit,HTTP Kit
+http-kit,HTTP Kit
+com.tencent.mm.opensdk,Wechat SDK For Android
+org.twitter4j,Twitter4J Core
+com.facebook.android,Facebook Android SDK
+org.slf4j,SLF4J API Module
+org.springframework.social,Foundational Module Containing The ServiceProvider Connect Framework and Service API Invocation Support.
+org.robovm,RoboPods Heyzap Android
+org.jetbrains.kotlin,Kotlin Android Extensions Runtime
+http-kit,HTTP Kit
+com.socialize,Loopy SDK Android
+com.agoda.kakao,Kakao
