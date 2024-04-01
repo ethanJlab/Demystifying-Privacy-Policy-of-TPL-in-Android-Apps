@@ -45,5 +45,5 @@ def main(TPL_list_folder):
 
 
 if __name__ == '__main__':
-    TPL_list_path = "/ATPChecker/dataset/TPL_PP"
+    TPL_list_path = "../dataset/TPL_PP"
     main(TPL_list_path)
