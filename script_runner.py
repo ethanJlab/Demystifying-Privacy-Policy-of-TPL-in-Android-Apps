@@ -1,21 +1,16 @@
-import os
+# Example script to use the tpl_statistics function from the tpl_analyzer module
 
-# Directory containing the scripts
-script_dir_part1 = "/PART1_dataset"
-script_dir_part2 = "/Part2_PrivacyPolicyAnalysis"
-script_dir_part3 = "/Part3_BinaryFilesAnalysis"
-script_dir_part4 = "/Part4_ResultsGenerator"
+# First, import the tpl_statistics function from the tpl_analyzer module
+from Part1_dataset.Step1_1_get_TPL_list_info import tpl_statistics
 
-# Get all files in the directory
-files1 = os.listdir(script_dir_part1)
-files2 = os.listdir(script_dir_part2)
-files3 = os.listdir(script_dir_part3)
-files4 = os.listdir(script_dir_part4)
+# Define the path to the TPL list folder you want to analyze
+tpl_list_folder_path = "dataset/TPL_PP"
 
-# Filter files that start with "Step1" and end with ".py"
-scripts1 = [file for file in files1 if file.startswith("Step1") and file.endswith(".py")]
+# Call the tpl_statistics function with the path to your TPL list folder
+# The function will print the statistics and also return them as a string
+statistics_output = tpl_statistics(tpl_list_folder_path)
 
-# Run each script
-for script in scripts1:
-    script_path = os.path.join(script_dir_part1, script)
-    os.system(f"python {script_path}")
+# If you wish to use the returned statistics output for further processing or logging,
+# you can do so here. For demonstration, we'll just print the returned value again.
+print("Returned Statistics Output:")
+print(statistics_output)

@@ -17,3 +17,7 @@ DownloadAPK/*
 *iml
 *.filepart
 *.shtml
+*.pyc
+Code.iml
+misc.xml
+vcs.xml
