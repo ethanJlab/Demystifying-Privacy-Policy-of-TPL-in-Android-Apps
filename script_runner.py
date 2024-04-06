@@ -1,7 +1,6 @@
-# Example script to use the tpl_statistics function from the tpl_analyzer module
-
-# First, import the tpl_statistics function from the tpl_analyzer module
+# Part 1 imports
 from Part1_dataset.Step1_1_get_TPL_list_info import tpl_statistics
+from
 
 # Define the path to the TPL list folder you want to analyze
 tpl_list_folder_path = "dataset/TPL_PP"
