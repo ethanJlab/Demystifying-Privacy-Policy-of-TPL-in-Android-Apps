@@ -61,7 +61,8 @@ keyword_list = ["email",
                 "network"]
 
 
-def main(results_file):
+def get_data_flow_results(results_file):
+    ret = ""
     statistics = {}
     tpl_access_user_data = {}
     trace = {}
@@ -112,7 +113,10 @@ def main(results_file):
     for i in statistics:
         data_statistic[i] = len(statistics[i])
     tmp = sorted(data_statistic.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
-    for i in tmp: print(i)
+    for i in tmp:
+        print(i)
+        ret += str(i) + " "
+
 
 if __name__ == '__main__':
     TPL_data_flow_results_folder = "../Results/TPL_binary_results"
