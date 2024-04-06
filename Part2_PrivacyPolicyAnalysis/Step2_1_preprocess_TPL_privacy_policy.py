@@ -8,7 +8,7 @@ from Part2_PrivacyPolicyAnalysis.html_process_util import processFile
 from Utils import check_folder
 
 
-def main(privacy_policy_folder, save_folder):
+def preprocess_privacy_policies(tpl_pp_folder, save_folder):
     ## TPL pp
 
     check_folder(save_folder)
@@ -28,14 +28,7 @@ def main(privacy_policy_folder, save_folder):
                 pp_file = os.path.join(path_2, html_file)
                 # save_file = os.path.join(save_folder_2, tpl_type + '_' + tpl_name + '.txt')
                 processFile(pp_file, save_folder_2)
+                print(html_file + " Has been processed")
+        # When finished
+        print("Processing Completed")
 
-
-if __name__ == '__main__':
-    '''
-    The TPL privacy policy should be saved under the structure: tpl_pp_folder/TPL_Category/TPL_name/privacy_policy_*.html 
-    The pre-processed privacy policies will be saved as save_folder/TPL_name.txt
-    '''
-
-    tpl_pp_folder = '/ATPChecker/dataset/TPL_PP'
-    save_folder = '../Results/preprocessed_pp/'
-    main(tpl_pp_folder, save_folder)

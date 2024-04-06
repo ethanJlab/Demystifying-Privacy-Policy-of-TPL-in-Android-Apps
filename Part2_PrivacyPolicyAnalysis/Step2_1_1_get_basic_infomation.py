@@ -29,7 +29,7 @@ def preprocess_sen(sen):
     return sen, True
 
 
-def main(tpl_folder, PRINT_FLAG):
+def get_basic_information(tpl_folder, PRINT_FLAG):
     sentence_with_sacwords = []
     vag_sen = []
     vague_num = 0  # pi only
@@ -49,6 +49,7 @@ def main(tpl_folder, PRINT_FLAG):
                 print(file_name)
             f = open(file_name, 'r')
             # sentence = [i.split('\n')[0] for i in f.readlines()]
+
             context = f.readlines()
 
             for c in context:
@@ -97,16 +98,14 @@ def main(tpl_folder, PRINT_FLAG):
         print("List of sentences ambiguously declaring data access behavior")
         for s in vag_sen:
             print('\t' + s)
+    ret = ""
+    ret += '============================================\n'
+    ret += "Number of sentences in all privacy policies: %d\n" % (sentence_num)
+    ret += "Number of sentences starting with 'who, why, when, whether, what, how': %d\n" % (num_wwwh)
+    ret += "Number of sentences with sharing and collection (SAC) words: %d\n" % (len(sentence_with_sacwords))
+    ret += "Number of sentences considered as SAC: %d\n" % (len(sentence_with_sacwords) - num_wwwh)
+    ret += "Number of sentences ambiguously declaring data access behavior: %d\n" % (len(vag_sen))
 
-    print('============================================\n')
-    print("Number of sentences in all privacy policies: %d" % (sentence_num))
-    print("Number of sentences starting with \'who, why, when, whether, what, how\' %d" % (num_wwwh))
-    print("Number of sentences with sharing and collection (SAC) words: %d" % (len(sentence_with_sacwords)))
-    print("Number of sentences consider as SAC: %d" % (len(sentence_with_sacwords) - num_wwwh))
-    print("Number of sentences ambiguously declaring data access behavior: %d" % (len((vag_sen))))
+    print(ret)
+    return ret
 
-
-if __name__ == '__main__':
-    TPL_pp_folder = "../Results/preprocessed_pp/"
-    PRINT_FLAG = False  # flag to print detail report
-    main(TPL_pp_folder, PRINT_FLAG)

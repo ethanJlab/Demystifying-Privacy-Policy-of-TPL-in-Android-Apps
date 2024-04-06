@@ -10,7 +10,7 @@ from Utils import check_folder
 import hanlp
 
 
-def main(host_app_pp_preprocessed_folder, save_root):
+def analyze_hostapp_pp(host_app_pp_preprocessed_folder, save_root):
     check_folder(save_root)
     hanlp_mtl = hanlp.load(hanlp.pretrained.mtl.UD_ONTONOTES_TOK_POS_LEM_FEA_NER_SRL_DEP_SDP_CON_XLMR_BASE)
     for tpl_category in os.listdir(host_app_pp_preprocessed_folder):
@@ -22,9 +22,4 @@ def main(host_app_pp_preprocessed_folder, save_root):
             save_name = os.path.join(save_root, app_pp)
             print(host_app_pp_file)
             analyze_host_app_pp(host_app_pp_file, save_name, hanlp_mtl, print_flag=True)
-
-
-if __name__ == '__main__':
-    host_app_pp_preprocessed_folder = '../Results/preprocessed_hostapp_pp/'
-    host_app_pp_analysis_results = '../Results/hostapp_pp_analysis_results'
-    main(host_app_pp_preprocessed_folder, host_app_pp_analysis_results)
+    print("Analysis Completed")
