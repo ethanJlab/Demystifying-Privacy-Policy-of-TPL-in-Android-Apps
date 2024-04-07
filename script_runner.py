@@ -12,6 +12,18 @@ from Part2_PrivacyPolicyAnalysis.Step2_3_preprocess_hostapp_pp import preprocess
 from Part2_PrivacyPolicyAnalysis.Step2_4_host_app_PP_analysis import analyze_hostapp_pp
 from Part2_PrivacyPolicyAnalysis.Step3_256app_privacy_policy_analysis import analyze_256app_pp
 
+# Part 3 is ran seperate
+
+# Part 4 imports
+from Part4_ResultsGenerator.RQ_2_1_TPL_dataflow_results import get_data_flow_results
+from Part4_ResultsGenerator.RQ_2_2_TPL_compliance_analysis import TPL_compliance_analysis
+from Part4_ResultsGenerator.RQ_2_3_Fig2_FCG_evaluation import generate_FCG_evaluation
+from Part4_ResultsGenerator.RQ_2_4_Fig3_data_types_analysis_in_TPL import data_flow_analysis_in_TPL
+from Part4_ResultsGenerator.RQ_3_1_Host_app_share_with_TPL import Host_app_share_with_TPL
+from Part4_ResultsGenerator.RQ_3_2_Draw_fig_5 import draw_fig_5
+from Part4_ResultsGenerator.RQ_4_Identify_app_conpliance import get_apk_name_map
+
+
 # Define the path to the TPL list folder you want to analyze
 tpl_list_folder_path = "dataset/TPL_PP"
 tpl_data_folder_path = "dataset/TPL_data"
@@ -25,10 +37,10 @@ preprocessed_pp_save_folder = '../Results/preprocessed_pp/'
 #get_basic_information(preprocessed_pp_save_folder, False)
 
 # Part 2 Jobs
-#analyze_pp(tpl_list_folder_path, preprocessed_pp_save_folder)
+# analyze_pp(tpl_list_folder_path, preprocessed_pp_save_folder)
 preprocess_hostapp_pp(host_apk_folder_path, preprocessed_pp_save_folder)
-#analyze_hostapp_pp(preprocessed_pp_save_folder)
-#analyze_256app_pp(preprocessed_pp_save_folder)
+# analyze_hostapp_pp(preprocessed_pp_save_folder)
+# analyze_256app_pp(preprocessed_pp_save_folder)
 
 
 
