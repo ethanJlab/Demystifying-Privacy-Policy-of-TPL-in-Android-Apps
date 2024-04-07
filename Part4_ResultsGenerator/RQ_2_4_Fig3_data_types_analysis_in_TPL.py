@@ -143,19 +143,19 @@ def get_TPL_pp_data_statistics(results_folder):
         folder_2 = os.path.join(results_folder, tpl_type)
         file_name = folder_2
         f = open(file_name, 'r')
-        data = f.readlines()
-        for tmp in data:
-            if not tmp.startswith('\t'):
-                continue
-            tmp = tmp.lower()
-            for i in TARGET_DATA:
-                if i in tmp:
-                    if not i in data_type_count:
-                        data_type_count[i] = 1
-                        data_type_sent[i] = []
-                    else:
-                        data_type_count[i] += 1
-                        data_type_sent[i].append(tmp)
+        # data = f
+        # for tmp in data:
+        #     if not tmp.startswith('\t'):
+        #         continue
+        #     tmp = tmp.lower()
+        #     for i in TARGET_DATA:
+        #         if i in tmp:
+        #             if not i in data_type_count:
+        #                 data_type_count[i] = 1
+        #                 data_type_sent[i] = []
+        #             else:
+        #                 data_type_count[i] += 1
+        #                 data_type_sent[i].append(tmp)
     tpl_pp_results = dict(sorted(data_type_count.items(), key=lambda item: item[1], reverse=True))
     return tpl_pp_results
 

@@ -61,8 +61,8 @@ def get_statistic_data(statistics_file):
 
 # if __name__ == '__main__':
 def generate_FCG_evaluation():
-    fcg_folder = '../Part3_BinaryFilesAnalysis/ATPChecker/FCG_Compare'
-    statistics = '../Part3_BinaryFilesAnalysis/ATPChecker/fcg_statistic.csv'
+    fcg_folder = 'Part3_BinaryFilesAnalysis/ATPChecker/FCG_Compare'
+    statistics = 'Part3_BinaryFilesAnalysis/ATPChecker/fcg_statistic.csv'
     data_sta = get_statistic_data(statistics)
     data_fcg = analyze_fcg_file(fcg_folder)
 

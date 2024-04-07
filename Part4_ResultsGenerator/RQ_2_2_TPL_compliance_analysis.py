@@ -209,7 +209,11 @@ def get_tpl_pp_data(results_folder):
         tpl = tpl_name.lower().replace('.txt', '')
         app_info_pp[tpl] = []
         f = open(file_name, 'r')
-        data = f.readlines()
+        data = ""
+        try:
+            data = f.readlines()
+        except:
+            return "Data Not Fully Processed"
         for tmp in data:
             if tmp.startswith('\t'):
                 continue
@@ -252,14 +256,14 @@ def get_tpl_ss_data(target_folder):
 
 #if __name__ == '__main__':
 def TPL_compliance_analysis():
-    tpl_name_map = get_tpl_name_map('./TPL_package_mapping/')
-    app_info_ss_tmp = get_tpl_ss_data('../Results/TPL_binary_results')
-    app_info_pp_tmp = get_tpl_pp_data('../Results/TPL_pp_analysis_results')
+    tpl_name_map = get_tpl_name_map('Part4_ResultsGenerator/TPL_package_mapping/')
+    app_info_ss_tmp = get_tpl_ss_data('Results/TPL_binary_results')
+    app_info_pp_tmp = get_tpl_pp_data('Results/TPL_pp_analysis_results')
     #
     app_info_pp = {}
-    for tpl in app_info_pp_tmp:
-        if len(app_info_pp_tmp[tpl]) != 0:
-            app_info_pp[tpl] = app_info_pp_tmp[tpl]
+    # for tpl in app_info_pp_tmp:
+    #     if len(app_info_pp_tmp[0]) != 0:
+    #         app_info_pp[tpl] = app_info_pp_tmp[tpl]
     app_info_ss = {}
     for tpl in app_info_ss_tmp:
         if len(app_info_ss_tmp[tpl]) > 0:
@@ -283,7 +287,10 @@ def TPL_compliance_analysis():
         else:
             tpl_no_pp.append(tpl_name)
     print("TPLs that mis disclose data usage:")
+    ret = []
     # for i in miss_disclose_compliance:
     #     print(i)
-    print("# TPLs that miss disclosing data usage %d / %d = %f" % (
+    ret.append("# TPLs that miss disclosing data usage %d / %d = %f" % (
         len(miss_disclose_compliance), len(app_info_ss), len(miss_disclose_compliance) / len(app_info_ss)))
+    print(ret)
+    return ret

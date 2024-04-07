@@ -98,8 +98,8 @@ def get_apk_name_map(pp_results_folder):
 
 
 def get_apk_name_map():
-    dataflow_folder = "../Results/256app_binary_results/"
-    pp_results_folder = "../Results/256app_pp_results"
+    dataflow_folder = "Results/256app_binary_results/"
+    pp_results_folder = "Results/256app_pp_results"
 
     #
     TPLListFile = 'TPL_List_Results.txt'
@@ -129,7 +129,7 @@ def get_apk_name_map():
                     dataflow_results[apk_name][TPL][PI] = data.split(' : ')[-1].replace('\n', '') + ' ==> ' + \
                                                           TPL_trace.split(' : ')[-1].replace('\n', '')
     # align the results files' name
-    code_pp_name_map = get_apk_name_map(pp_results_folder)
+    code_pp_name_map = get_apk_name_map()
     #
     TPLPack2Name, TPLName2Pack = get_tpl_pack_name_map('./TPL_package_mapping/')
 
