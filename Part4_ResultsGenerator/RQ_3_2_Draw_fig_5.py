@@ -56,7 +56,7 @@ data_map = {
 }
 
 
-def main(results_folder):
+def draw_fig_5(results_folder):
     results = {}
     TPL = []
     PI = []
@@ -187,8 +187,9 @@ def main(results_folder):
     #
     plt.savefig('./Fig5.pdf')
     plt.show()
+    return './Fig5.pdf'
 
 
-if __name__ == '__main__':
-    results_folder = '../Results/host_app_binary_results'
-    main(results_folder)
+# if __name__ == '__main__':
+#     results_folder = '../Results/host_app_binary_results'
+#     main(results_folder)

@@ -9,7 +9,7 @@ import os
 from Utils import check_macos_files
 
 
-def main(rp, hap):
+def Host_app_share_with_TPL(rp, hap):
     share_count = 0
     apk_list = []
     for TPL_cat in os.listdir(hap):
@@ -40,11 +40,13 @@ def main(rp, hap):
                     share_count += 1
 
                     break
-    app_num = len(os.listdir(results_path)) - 1  # minus the DS_Store
-    print("%d /%d (%f %%) Host apps share data with TPLs" % (share_count, app_num, share_count / app_num))
+    app_num = len(os.listdir(rp)) - 1  # minus the DS_Store
+    ret = "%d /%d (%f %%) Host apps share data with TPLs" % (share_count, app_num, share_count / app_num)
+    print(ret)
+    return ret
 
 
-if __name__ == '__main__':
-    results_path = '/Results/host_app_binary_results'
-    host_app_path = '/ATPChecker/dataset/host_apk'
-    main(results_path, host_app_path)
+# if __name__ == '__main__':
+#     results_path = '/Results/host_app_binary_results'
+#     host_app_path = '/ATPChecker/dataset/host_apk'
+#     main(results_path, host_app_path)

@@ -6,7 +6,7 @@
 import os
 import re
 
-from Util_Table5 import get_tpl_pack_name_map
+from Part4_ResultsGenerator.Util_Table5 import get_tpl_pack_name_map
 
 TPL_map = {
     'alipay': 'alipay',
@@ -97,8 +97,7 @@ def get_apk_name_map(pp_results_folder):
 
 
 
-
-if __name__ == '__main__':
+def get_apk_name_map():
     dataflow_folder = "../Results/256app_binary_results/"
     pp_results_folder = "../Results/256app_pp_results"
 
@@ -459,3 +458,4 @@ if __name__ == '__main__':
                                         TPLDataWrite.write("\t\t\t No Trace found in code \n")
                                         TPLDataWrite.flush()
                                         rt.append('.'.join([apk_name, data, tpl]))
+    print("Completed TPL data analysis.")

@@ -118,6 +118,6 @@ def get_data_flow_results(results_file):
         ret += str(i) + " "
 
 
-if __name__ == '__main__':
-    TPL_data_flow_results_folder = "../Results/TPL_binary_results"
-    main(TPL_data_flow_results_folder)
+# if __name__ == '__main__':
+#     TPL_data_flow_results_folder = "../Results/TPL_binary_results"
+#     main(TPL_data_flow_results_folder)

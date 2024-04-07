@@ -250,7 +250,8 @@ def get_tpl_ss_data(target_folder):
     return app_info_ss
 
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
+def TPL_compliance_analysis():
     tpl_name_map = get_tpl_name_map('./TPL_package_mapping/')
     app_info_ss_tmp = get_tpl_ss_data('../Results/TPL_binary_results')
     app_info_pp_tmp = get_tpl_pp_data('../Results/TPL_pp_analysis_results')

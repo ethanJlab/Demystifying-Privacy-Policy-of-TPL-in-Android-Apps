@@ -224,7 +224,7 @@ def draw_fig3(TPL_data_flow_results_folder, TPL_pp_results_folder):
     plt.show()
 
 
-if __name__ == '__main__':
-    TPL_data_flow_results_folder = "../Results/TPL_binary_results"
-    TPL_pp_results_folder = "../Results/TPL_pp_analysis_results"
+def data_flow_analysis_in_TPL(TPL_data_flow_results_folder, TPL_pp_results_folder):
     draw_fig3(TPL_data_flow_results_folder, TPL_pp_results_folder)
+    # return the path of the generated figure
+    return './Fig3.pdf'
