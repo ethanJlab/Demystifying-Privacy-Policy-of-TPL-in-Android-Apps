@@ -51,7 +51,7 @@ analyze_tpl_binaryfiles_output = analyze_tpl_binary_files(tpl_data_folder_path)
 host_apps_count = count_host_apps(host_apk_folder_path)
 
 # Part 2 outputs
-preprocess_privacy_policies(tpl_list_folder_path, preprocessed_pp_save_folder)
+#preprocess_privacy_policies(tpl_list_folder_path, preprocessed_pp_save_folder)
 
 # Print outputs for Part 1
 print("Returned tpl_statistics_output:")
@@ -68,6 +68,43 @@ print(host_apps_count)
 
 # Print outputs for Part 2
 print("\n Completed pre-process_privacy_policies")
+
+# Part 4 outputs
+print("\n Running get_data_flow_results")
+get_data_flow_results("Results/TPL_binary_results")
+print("\n Completed get_data_flow_results")
+
+print("\n Running TPL_compliance_analysis")
+TPL_compliance_analysis_output = TPL_compliance_analysis()
+print("\n Completed TPL_compliance_analysis")
+print(TPL_compliance_analysis_output)
+
+print("\n Running generate_FCG_evaluation")
+generate_FCG_evaluation_output = generate_FCG_evaluation()
+print("\n Completed generate_FCG_evaluation")
+print(generate_FCG_evaluation_output)
+
+# print("\n Running data_flow_analysis_in_TPL")
+# data_flow_analysis_in_TPL_output = data_flow_analysis_in_TPL("Results/TPL_binary_results", "Results/TPL_pp_analysis_results")
+# print("\n Completed data_flow_analysis_in_TPL")
+# print(data_flow_analysis_in_TPL_output)
+
+print("\n Running Host_app_share_with_TPL")
+Host_app_share_with_TPL_output = Host_app_share_with_TPL("Results/host_app_binary_results", host_apk_folder_path)
+print("\n Completed Host_app_share_with_TPL")
+print(Host_app_share_with_TPL_output)
+
+print("\n Running draw_fig_5")
+draw_fig_5_output = draw_fig_5("Results/host_app_binary_results")
+print("\n Completed draw_fig_5")
+print("Fig 5 location: "+ draw_fig_5_output)
+
+print("\n Running get_apk_name_map")
+#get_apk_name_map_output = get_apk_name_map()
+print("\n Completed get_apk_name_map")
+#print(get_apk_name_map_output)
+print("End of Script runner")
+
 
 
 
