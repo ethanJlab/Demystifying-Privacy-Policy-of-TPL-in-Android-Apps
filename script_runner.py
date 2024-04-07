@@ -30,17 +30,18 @@ tpl_data_folder_path = "dataset/TPL_data"
 host_apk_folder_path = "dataset/host_apk"
 
 # Part 2 output locations
-preprocessed_pp_save_folder = '../Results/preprocessed_pp/'
+preprocessed_pp_save_folder = 'Results/preprocessed_pp/'
+temp_save = 'Save/'
 
 
 # Part 2 outputs
-#get_basic_information(preprocessed_pp_save_folder, False)
+get_basic_information(preprocessed_pp_save_folder, False)
 
 # Part 2 Jobs
-# analyze_pp(tpl_list_folder_path, preprocessed_pp_save_folder)
+#analyze_pp(tpl_list_folder_path, preprocessed_pp_save_folder)
 preprocess_hostapp_pp(host_apk_folder_path, preprocessed_pp_save_folder)
-# analyze_hostapp_pp(preprocessed_pp_save_folder)
-# analyze_256app_pp(preprocessed_pp_save_folder)
+#analyze_hostapp_pp(preprocessed_pp_save_folder)
+#analyze_256app_pp(preprocessed_pp_save_folder,temp_save)
 
 
 
@@ -51,7 +52,7 @@ analyze_tpl_binaryfiles_output = analyze_tpl_binary_files(tpl_data_folder_path)
 host_apps_count = count_host_apps(host_apk_folder_path)
 
 # Part 2 outputs
-#preprocess_privacy_policies(tpl_list_folder_path, preprocessed_pp_save_folder)
+preprocess_privacy_policies(tpl_list_folder_path, preprocessed_pp_save_folder)
 
 # Print outputs for Part 1
 print("Returned tpl_statistics_output:")

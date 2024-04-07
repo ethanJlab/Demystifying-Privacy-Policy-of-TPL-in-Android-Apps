@@ -50,46 +50,46 @@ def get_basic_information(tpl_folder, PRINT_FLAG):
             f = open(file_name, 'r')
             # sentence = [i.split('\n')[0] for i in f.readlines()]
 
-            context = f.readlines()
-
-            for c in context:
-                s = c.split('\n')
-                #
-                if len(s) > 2:
-                    print("ERROR" + str(len(s)))
-                    print(s)
-                s = s[0]
-                #
-                sen = s.split('. ')
-                sen = list(filter(None, sen))
-                sentence.extend(sen)
-            f.close()
-            for sen in sentence:
-                for i in WWWWWH:
-                    if i in sen.lower():
-                        num_wwwh += 1
-                sen, c_flag = preprocess_sen(sen)
-                if not c_flag:
-                    continue
-                for verb in SHARE_ACTION:
-                    if ' ' + verb in sen.lower():
-                        sentence_with_sacwords.append(verb + ":\t" + sen)
-                        f = check_vague_data_collect(sen)
-                        if f:
-                            vague_num += 1
-                            vag_sen.append(sen)
-                        break
-                if sen in vag_sen:
-                    continue
-                for verb in COLLECT_ACTION:
-                    if ' ' + verb in sen.lower():
-                        f = check_vague_data_collect(sen)
-                        if f:
-                            vague_num += 1
-                            vag_sen.append(sen)
-                        sentence_with_sacwords.append(verb + ":\t" + sen)
-                        break
-            sentence_num += len(sentence)
+            # context = f.readlines()
+            #
+            # for c in context:
+            #     s = c.split('\n')
+            #     #
+            #     if len(s) > 2:
+            #         print("ERROR" + str(len(s)))
+            #         print(s)
+            #     s = s[0]
+            #     #
+            #     sen = s.split('. ')
+            #     sen = list(filter(None, sen))
+            #     sentence.extend(sen)
+            # f.close()
+            # for sen in sentence:
+            #     for i in WWWWWH:
+            #         if i in sen.lower():
+            #             num_wwwh += 1
+            #     sen, c_flag = preprocess_sen(sen)
+            #     if not c_flag:
+            #         continue
+            #     for verb in SHARE_ACTION:
+            #         if ' ' + verb in sen.lower():
+            #             sentence_with_sacwords.append(verb + ":\t" + sen)
+            #             f = check_vague_data_collect(sen)
+            #             if f:
+            #                 vague_num += 1
+            #                 vag_sen.append(sen)
+            #             break
+            #     if sen in vag_sen:
+            #         continue
+            #     for verb in COLLECT_ACTION:
+            #         if ' ' + verb in sen.lower():
+            #             f = check_vague_data_collect(sen)
+            #             if f:
+            #                 vague_num += 1
+            #                 vag_sen.append(sen)
+            #             sentence_with_sacwords.append(verb + ":\t" + sen)
+            #             break
+            # sentence_num += len(sentence)
 
     if PRINT_FLAG:
         print("List of sentences wit sharing and collection words:")
