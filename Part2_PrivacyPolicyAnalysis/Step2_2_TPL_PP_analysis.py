@@ -9,7 +9,7 @@ import hanlp
 import os
 
 
-def main(tpl_pp_folder, save_root):
+def analyze_pp(tpl_pp_folder, save_root):
     check_folder(save_root)
     hanlp_mtl = hanlp.load(hanlp.pretrained.mtl.UD_ONTONOTES_TOK_POS_LEM_FEA_NER_SRL_DEP_SDP_CON_XLMR_BASE)
     for tpl_type in os.listdir(tpl_pp_folder):
@@ -20,9 +20,4 @@ def main(tpl_pp_folder, save_root):
             save_name = os.path.join(save_root, tpl_name)
             print(tpl_pp_file)
             get_data_usage(tpl_pp_file, save_name, hanlp_mtl, print_flag=True)
-
-
-if __name__ == '__main__':
-    TPL_PP_preprocessed_folder = '../Results/preprocessed_pp/'
-    TPL_PP_analysis_results = '../Results/TPL_pp_analysis_results'
-    main(TPL_PP_preprocessed_folder, TPL_PP_analysis_results)
+    print("Processing Completed")

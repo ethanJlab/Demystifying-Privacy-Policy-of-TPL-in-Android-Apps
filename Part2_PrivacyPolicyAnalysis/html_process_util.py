@@ -5,7 +5,7 @@
 # System: linux
 import os
 import codecs
-import UnicodeNormalizer as uni
+from Part2_PrivacyPolicyAnalysis.UnicodeNormalizer import normalize
 import html2text
 import re
 from bs4 import BeautifulSoup, Comment
@@ -27,7 +27,7 @@ def processFile(filename, outputDir=None):
             # outputfilename = os.path.join(outputDir, outputfilename)
             res = Preprocessor(filename).parse()
             with codecs.open(outputfilename, 'w', 'utf-8') as outputfile:
-                outputfile.write(u'\n'.join(uni.normalize(res)))
+                outputfile.write(u'\n'.join(normalize(res)))
         print("\t ===> %s" % (outputfilename))
     except NonEnglishException:
         with codecs.open('nonenglish_privacy_policy.log', 'a', 'utf-8') as logfile:
@@ -523,7 +523,7 @@ class TextPostProcessor:
             if len(line.strip()) == 0 or not self.containsLettersOrNumbers(line):
                 continue
 
-            line = uni.normalize(line)
+            line = normalize(line)
 
             # TODO should we exclude non-English paragraphs?
             # if langid.classify(line)[0] != u'en':
