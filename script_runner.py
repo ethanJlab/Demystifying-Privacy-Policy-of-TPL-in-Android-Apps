@@ -24,7 +24,7 @@ from Part4_ResultsGenerator.RQ_3_2_Draw_fig_5 import draw_fig_5
 from Part4_ResultsGenerator.RQ_4_Identify_app_conpliance import get_apk_name_map
 
 
-TEST = True
+TEST = False
 
 # Define the path to the TPL list folder you want to analyze
 if not TEST:
