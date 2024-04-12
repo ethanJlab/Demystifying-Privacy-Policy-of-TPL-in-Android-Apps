@@ -60,9 +60,9 @@ keyword_list = ["email",
                 "password",
                 "network"]
 
-
 def get_data_flow_results(results_file):
     ret = ""
+    output_list = []
     statistics = {}
     tpl_access_user_data = {}
     trace = {}
@@ -91,6 +91,7 @@ def get_data_flow_results(results_file):
                     statistics[data_type] = []
                 statistics[data_type].append(tpl_name)
                 print(data_api + '\t' + line)
+                output_list.append(data_api + '\t' + line)
                 #
                 if tpl_name not in tpl_access_user_data:
                     tpl_access_user_data[tpl_name] = []
@@ -115,7 +116,9 @@ def get_data_flow_results(results_file):
     tmp = sorted(data_statistic.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
     for i in tmp:
         print(i)
+        output_list.append(i)
         ret += str(i) + " "
+    return output_list
 
 
 # if __name__ == '__main__':

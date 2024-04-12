@@ -73,7 +73,7 @@ data_map = {
     "getUserName": "username"
 }
 
-
+output_list = []
 def get_tpl_name_map_old(tar_folder):
     kz_map = {}
     for tpl_type in os.listdir(tar_folder):
@@ -284,13 +284,14 @@ def TPL_compliance_analysis():
                         miss_disclose_compliance[tpl_name] = []
                     miss_disclose_compliance[tpl_name].append(i)
                     print("%s missing disclose %s in its privacy policy." % (tpl_name, i))
+                    output_list.append("%s missing disclose %s in its privacy policy." % (tpl_name, i))
         else:
             tpl_no_pp.append(tpl_name)
     print("TPLs that mis disclose data usage:")
-    ret = []
+    output_list.append("TPLs that mis disclose data usage:")
     # for i in miss_disclose_compliance:
     #     print(i)
-    ret.append("# TPLs that miss disclosing data usage %d / %d = %f" % (
+    output_list.append("# TPLs that miss disclosing data usage %d / %d = %f" % (
         len(miss_disclose_compliance), len(app_info_ss), len(miss_disclose_compliance) / len(app_info_ss)))
-    print(ret)
-    return ret
+    print(output_list)
+    return output_list
