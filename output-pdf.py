@@ -75,7 +75,7 @@ if not TEST:
     pdf.multi_cell(0, 5, '============================================')
 
     pdf.sub_header("Part 2: Privacy policy analysis (no further output generated)")
-    pdf.set_font('arial', '', 13.0)
+    pdf.set_font('arial', '', 13)
 
     for item in p2_list:
         pdf.multi_cell(0, 5, str(item))
@@ -83,19 +83,50 @@ if not TEST:
     pdf.multi_cell(0, 5, '============================================')
 
     pdf.sub_header("Part 3: Binary files analysis (no output generated)")
-    pdf.set_font('arial', '', 13.0)
+    pdf.set_font('arial', '', 13)
 
     pdf.multi_cell(0, 5, '============================================')
 
     pdf.sub_header("Part 4: Results generator")
-    pdf.set_font('arial', '', 13.0)
+    pdf.set_font('arial', '', 13)
+
+    import fitz
+
+    def pdf_to_png(pdf_path, png_path):
+        # Open the PDF
+        pdf_document = fitz.open(pdf_path)
+
+        # Iterate over each page
+        for page_number in range(len(pdf_document)):
+            # Get the page
+            page = pdf_document[page_number]
+
+            # Render the page as an image (high-quality)
+            pixmap = page.get_pixmap(alpha=False)
+
+            # Save the image as PNG
+            pixmap.save(f"{png_path}.png")
+
+        # Close the PDF
+        pdf_document.close()
 
     for item in p4_list:
         item_as_string = str(item)
         item_length = len(item_as_string)
+        # check file type
         if item_as_string[item_length-4:item_length] == ".png":
-            pdf.image(item, 15, 13, 30)
-        pdf.multi_cell(0, 5, str(item))
+            pdf.add_page()
+            pdf.multi_cell(0, 5, "Running generate_FCG_evaluation")
+            pdf.image(item, pdf.get_x(), pdf.get_y(), 190)
+            continue
+        elif item_as_string[item_length-4:item_length] == ".pdf":
+            pdf.add_page()
+            pdf.multi_cell(0, 5, "Running draw_fig_5")
+            pdf_to_png(item_as_string, "Fig5")
+            to_png = "Fig5.png"
+            pdf.image(to_png, pdf.get_x(), pdf.get_y(), 190)
+            continue
+        pdf.multi_cell(0, 5, item_as_string)
 
 pdf.output('report.pdf', 'F')
 

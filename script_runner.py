@@ -26,7 +26,7 @@ from Part4_ResultsGenerator.RQ_4_Identify_app_conpliance import get_apk_name_map
 
 
 TESTP1 = True
-TESTP4 = False
+TESTP4 = True
 
 # Define the path to the TPL list folder you want to analyze
 tpl_list_folder_path = "dataset/TPL_PP"
@@ -93,7 +93,7 @@ if TESTP1:
 
 # Part 4 outputs
 if TESTP4:
-    TEST_PART = True
+    TEST_PART = False
     if not TEST_PART:
         print("\n Running get_data_flow_results")
         p4_list.append("\n Running get_data_flow_results")
@@ -113,14 +113,14 @@ if TESTP4:
         p4_list.append(TPL_compliance_analysis_output)
         p4_list.append("\n Completed TPL_compliance_analysis")
 
-    if TEST_PART:
+    if not TEST_PART:
         print("\n Running generate_FCG_evaluation")
         generate_FCG_evaluation_output = generate_FCG_evaluation()
         print("\n Completed generate_FCG_evaluation")
         print(generate_FCG_evaluation_output)
-        p4_list.append("\n Running generate_FCG_evaluation")
+        # p4_list.append("\n Running generate_FCG_evaluation")
         p4_list.append(generate_FCG_evaluation_output)
-        p4_list.append("\n Completed generate_FCG_evaluation")
+        # p4_list.append("\n Completed generate_FCG_evaluation")
 
     # print("\n Running data_flow_analysis_in_TPL")
     # data_flow_analysis_in_TPL_output = data_flow_analysis_in_TPL("Results/TPL_binary_results", "Results/TPL_pp_analysis_results")
@@ -128,22 +128,22 @@ if TESTP4:
     # print(data_flow_analysis_in_TPL_output)
 
     if not TEST_PART:
+        print("\n Running draw_fig_5")
+        draw_fig_5_output = draw_fig_5("Results/host_app_binary_results")
+        print("\n Completed draw_fig_5")
+        print("Fig 5 location: " + draw_fig_5_output)
+        # p4_list.append("\n Running draw_fig_5")
+        p4_list.append(draw_fig_5_output)
+        # p4_list.append("\n Completed draw_fig_5")
+
+    if not TEST_PART:
         print("\n Running Host_app_share_with_TPL")
         Host_app_share_with_TPL_output = Host_app_share_with_TPL("Results/host_app_binary_results", host_apk_folder_path)
         print("\n Completed Host_app_share_with_TPL")
         print(Host_app_share_with_TPL_output)
-        p4_list.append("\n Running Host_app_share_with_TPL")
-        p4_list.append(Host_app_share_with_TPL_output)
-        p4_list.append("\n Completed Host_app_share_with_TPL")
-
-        print("\n Running draw_fig_5")
-        draw_fig_5_output = draw_fig_5("Results/host_app_binary_results")
-        print("\n Completed draw_fig_5")
-        print("Fig 5 location: "+ draw_fig_5_output)
-        p4_list.append("\n Running draw_fig_5")
-        # here is a png
-        p4_list.append(draw_fig_5_output)
-        p4_list.append("\n Completed draw_fig_5")
+        # p4_list.append("\n Running Host_app_share_with_TPL")
+        # p4_list.append(Host_app_share_with_TPL_output)
+        # p4_list.append("\n Completed Host_app_share_with_TPL")
 
 
 print("\n Running get_apk_name_map")
