@@ -6,8 +6,8 @@ html2text~=2020.1.16
 roman~=3.3
 langid~=1.1.6
 beautifulsoup4~=4.10.0
-
-
 PyMuPDF==1.24.1
 PyMuPDFb==1.24.1
 fpdf==1.7.2
+gradio~=4.26.0
+gradio-pdf~=0.0.7
