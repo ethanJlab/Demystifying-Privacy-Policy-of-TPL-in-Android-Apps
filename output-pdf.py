@@ -1,6 +1,7 @@
 # script to take in an input and output it as a pdf
 
 from fpdf import FPDF
+import fitz
 from script_runner import prelude_list
 from script_runner import p1_list
 from script_runner import p2_list
@@ -89,8 +90,6 @@ if not TEST:
 
     pdf.sub_header("Part 4: Results generator")
     pdf.set_font('arial', '', 13)
-
-    import fitz
 
     def pdf_to_png(pdf_path, png_path):
         # Open the PDF
