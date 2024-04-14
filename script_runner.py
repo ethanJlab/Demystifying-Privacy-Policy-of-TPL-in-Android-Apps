@@ -29,17 +29,23 @@ tpl_list_folder_path = "dataset/TPL_PP"
 tpl_data_folder_path = "dataset/TPL_data"
 host_apk_folder_path = "dataset/host_apk"
 
+prelude_list = []
+p1_list = []
+p2_list = []
+p3_list = []
+p4_list = []
+
+
 # Part 2 output locations
 preprocessed_pp_save_folder = 'Results/preprocessed_pp/'
 temp_save = 'Save/'
 
-
 # Part 2 outputs
-get_basic_information(preprocessed_pp_save_folder, False)
+prelude_list.append(get_basic_information(preprocessed_pp_save_folder, False))
 
 # Part 2 Jobs
 #analyze_pp(tpl_list_folder_path, preprocessed_pp_save_folder)
-preprocess_hostapp_pp(host_apk_folder_path, preprocessed_pp_save_folder)
+prelude_list.append(preprocess_hostapp_pp(host_apk_folder_path, preprocessed_pp_save_folder))
 #analyze_hostapp_pp(preprocessed_pp_save_folder)
 #analyze_256app_pp(preprocessed_pp_save_folder,temp_save)
 
@@ -57,48 +63,76 @@ preprocess_privacy_policies(tpl_list_folder_path, preprocessed_pp_save_folder)
 # Print outputs for Part 1
 print("Returned tpl_statistics_output:")
 print(tpl_statistics_output)
+p1_list.append("Returned tpl_statistics_output:")
+p1_list.append(tpl_statistics_output)
 
 print("\nReturned analyze_tpl_privacy_policies_output:")
 print(analyze_tpl_privacy_policies_output)
+p1_list.append("\nReturned analyze_tpl_privacy_policies_output:")
+p1_list.append(analyze_tpl_privacy_policies_output)
 
 print("\nReturned analyze_tpl_binaryfiles_output:")
 print(analyze_tpl_binaryfiles_output)
+p1_list.append("\nReturned analyze_tpl_binaryfiles_output:")
+p1_list.append(analyze_tpl_binaryfiles_output)
 
 print("\nReturned host_apps_count:")
 print(host_apps_count)
+p1_list.append("\nReturned host_apps_count:")
+p1_list.append(host_apps_count)
 
 # Print outputs for Part 2
 print("\n Completed pre-process_privacy_policies")
+p2_list.append("\n Completed pre-process_privacy_policies")
+
 
 # Part 4 outputs
 print("\n Running get_data_flow_results")
-get_data_flow_results("Results/TPL_binary_results")
+p4_list.append("\n Running get_data_flow_results")
+data_flow = get_data_flow_results("Results/TPL_binary_results")
+for item in data_flow:
+    p4_list.append(item)
+    # p4_list.append("end of item")
 print("\n Completed get_data_flow_results")
+p4_list.append("\n Completed get_data_flow_results")
 
 print("\n Running TPL_compliance_analysis")
 TPL_compliance_analysis_output = TPL_compliance_analysis()
 print("\n Completed TPL_compliance_analysis")
 print(TPL_compliance_analysis_output)
+p4_list.append("\n Running TPL_compliance_analysis")
+p4_list.append(TPL_compliance_analysis_output)
+p4_list.append("\n Completed TPL_compliance_analysis")
 
 print("\n Running generate_FCG_evaluation")
 generate_FCG_evaluation_output = generate_FCG_evaluation()
 print("\n Completed generate_FCG_evaluation")
 print(generate_FCG_evaluation_output)
+# p4_list.append("\n Running generate_FCG_evaluation")
+p4_list.append(generate_FCG_evaluation_output)
+# p4_list.append("\n Completed generate_FCG_evaluation")
 
 # print("\n Running data_flow_analysis_in_TPL")
 # data_flow_analysis_in_TPL_output = data_flow_analysis_in_TPL("Results/TPL_binary_results", "Results/TPL_pp_analysis_results")
 # print("\n Completed data_flow_analysis_in_TPL")
 # print(data_flow_analysis_in_TPL_output)
 
+print("\n Running draw_fig_5")
+draw_fig_5_output = draw_fig_5("Results/host_app_binary_results")
+print("\n Completed draw_fig_5")
+print("Fig 5 location: " + draw_fig_5_output)
+# p4_list.append("\n Running draw_fig_5")
+p4_list.append(draw_fig_5_output)
+# p4_list.append("\n Completed draw_fig_5")
+
 print("\n Running Host_app_share_with_TPL")
 Host_app_share_with_TPL_output = Host_app_share_with_TPL("Results/host_app_binary_results", host_apk_folder_path)
 print("\n Completed Host_app_share_with_TPL")
 print(Host_app_share_with_TPL_output)
+# p4_list.append("\n Running Host_app_share_with_TPL")
+# p4_list.append(Host_app_share_with_TPL_output)
+# p4_list.append("\n Completed Host_app_share_with_TPL")
 
-print("\n Running draw_fig_5")
-draw_fig_5_output = draw_fig_5("Results/host_app_binary_results")
-print("\n Completed draw_fig_5")
-print("Fig 5 location: "+ draw_fig_5_output)
 
 print("\n Running get_apk_name_map")
 #get_apk_name_map_output = get_apk_name_map()
