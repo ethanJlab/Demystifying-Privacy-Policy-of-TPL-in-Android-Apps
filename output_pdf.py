@@ -6,12 +6,13 @@ import fitz
 
 title = 'ATP Checker Analysis Report'
 
+
 class myPDFformat(FPDF):
     def header(self):
         self.set_font('helvetica', 'B', 20)
 
         # calculate title width and position
-        titleWidth = self.get_string_width(title) + 6 # padding
+        titleWidth = self.get_string_width(title) + 6  # padding
         docWidth = self.w
         self.set_x((docWidth - titleWidth) / 2)
 
@@ -30,7 +31,7 @@ class myPDFformat(FPDF):
         self.cell(0, 10, f'Page {self.page_no()}', align='C')
 
 
-# auxiliary function
+# auxiliary functions
 def pdf_to_png(pdf_path, png_path):
     # Open the PDF
     pdf_document = fitz.open(pdf_path)
@@ -48,6 +49,25 @@ def pdf_to_png(pdf_path, png_path):
 
     # Close the PDF
     pdf_document.close()
+
+
+def print_to_pdf(pdf, in_list):
+    for item in in_list:
+        item_as_string = str(item)
+        item_length = len(item_as_string)
+        # check file type
+        if item_as_string[item_length-4:item_length] == ".png":
+            pdf.add_page()
+            pdf.multi_cell(0, 5, "Running generate_FCG_evaluation")
+            pdf.image(item, pdf.get_x(), pdf.get_y(), 190)
+        elif item_as_string[item_length-4:item_length] == ".pdf":
+            pdf.add_page()
+            pdf.multi_cell(0, 5, "Running draw_fig_5")
+            pdf_to_png(item_as_string, "Fig5")
+            to_png = "Fig5.png"
+            pdf.image(to_png, pdf.get_x(), pdf.get_y(), 190)
+        else:
+            pdf.multi_cell(0, 5, item_as_string)
 
 
 def main(report_name='report', test_flag=False, *args, **kwargs):
@@ -85,16 +105,14 @@ def main(report_name='report', test_flag=False, *args, **kwargs):
     pdf.sub_header("Part 1: Get Dataset Information")
     pdf.set_font('arial', '', 13)
 
-    for item in list1:
-        pdf.multi_cell(0, 5, str(item))
+    print_to_pdf(pdf, list1)
 
     pdf.multi_cell(0, 5, '============================================')
 
     pdf.sub_header("Part 2: Privacy policy analysis (no further output generated)")
     pdf.set_font('arial', '', 13)
 
-    for item in list2:
-        pdf.multi_cell(0, 5, str(item))
+    print_to_pdf(pdf, list2)
 
     pdf.multi_cell(0, 5, '============================================')
 
@@ -106,23 +124,7 @@ def main(report_name='report', test_flag=False, *args, **kwargs):
     pdf.sub_header("Part 4: Results generator")
     pdf.set_font('arial', '', 13)
 
-    for item in list4:
-        item_as_string = str(item)
-        item_length = len(item_as_string)
-        # check file type
-        if item_as_string[item_length-4:item_length] == ".png":
-            pdf.add_page()
-            pdf.multi_cell(0, 5, "Running generate_FCG_evaluation")
-            pdf.image(item, pdf.get_x(), pdf.get_y(), 190)
-            continue
-        elif item_as_string[item_length-4:item_length] == ".pdf":
-            pdf.add_page()
-            pdf.multi_cell(0, 5, "Running draw_fig_5")
-            pdf_to_png(item_as_string, "Fig5")
-            to_png = "Fig5.png"
-            pdf.image(to_png, pdf.get_x(), pdf.get_y(), 190)
-            continue
-        pdf.multi_cell(0, 5, item_as_string)
+    print_to_pdf(pdf, list4)
 
     pdf.output(report_name + '.pdf', 'F')
 

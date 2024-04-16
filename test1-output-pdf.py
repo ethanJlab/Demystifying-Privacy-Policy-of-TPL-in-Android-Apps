@@ -1,9 +1,9 @@
 # test script that tests if output_pdf.py outputs text to a pdf
 
-from output_pdf import main
+from output_pdf import main as m
 
 
-def inject_text():
+def main():
     prelude = []
     list1 = []
     list2 = []
@@ -18,7 +18,7 @@ def inject_text():
 
     list4.append("successfully printed out to the part 4 section")
 
-    main('test_report', True, kwargs_0=prelude, kwargs_1=list1, kwargs_2=list2, kwargs_3=list3, kwargs_4=list4)
+    m('test_report_1', True, kwargs_0=prelude, kwargs_1=list1, kwargs_2=list2, kwargs_3=list3, kwargs_4=list4)
 
 
-inject_text()
+main()
