@@ -2,11 +2,6 @@
 
 from fpdf import FPDF
 import fitz
-from script_runner import prelude_list
-from script_runner import p1_list
-from script_runner import p2_list
-from script_runner import p3_list
-from script_runner import p4_list
 
 
 title = 'ATP Checker Analysis Report'
@@ -55,7 +50,24 @@ def pdf_to_png(pdf_path, png_path):
     pdf_document.close()
 
 
-def main(prelude=prelude_list, list1=p1_list, list2=p2_list, list3=p3_list, list4=p4_list):
+def main(report_name='report', test_flag=False, *args, **kwargs):
+    if not test_flag:
+        from script_runner import prelude_list
+        from script_runner import p1_list
+        from script_runner import p2_list
+        from script_runner import p3_list
+        from script_runner import p4_list
+
+        prelude = prelude_list
+        list1 = p1_list
+        list2 = p2_list
+        list4 = p4_list
+    else:
+        prelude = kwargs.get("kwargs_0")
+        list1 = kwargs.get("kwargs_1")
+        list2 = kwargs.get("kwargs_2")
+        list4 = kwargs.get("kwargs_4")
+
     pdf = myPDFformat('L')
     pdf.alias_nb_pages()
 
@@ -112,7 +124,7 @@ def main(prelude=prelude_list, list1=p1_list, list2=p2_list, list3=p3_list, list
             continue
         pdf.multi_cell(0, 5, item_as_string)
 
-    pdf.output('report.pdf', 'F')
+    pdf.output(report_name + '.pdf', 'F')
 
 
 if __name__ == "__main__":
