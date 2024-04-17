@@ -4,7 +4,7 @@ from output_pdf import print_to_pdf
 from output_pdf import myPDFformat
 
 
-def main():
+def test_png():
     content = ['sample.png']
 
     pdf = myPDFformat('L')
@@ -21,4 +21,4 @@ def main():
     pdf.output('test_report_3' + '.pdf', 'F')
 
 
-main()
+test_png()

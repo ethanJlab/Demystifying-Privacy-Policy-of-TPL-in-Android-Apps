@@ -5,7 +5,7 @@ from output_pdf import myPDFformat
 import fpdf
 
 
-def main():
+def test_print():
     with open("test_input.txt", "r") as text_file:
         content = [(text_file.read())]
 
@@ -23,4 +23,4 @@ def main():
     pdf.output('test_report_2' + '.pdf', 'F')
 
 
-main()
+test_print()

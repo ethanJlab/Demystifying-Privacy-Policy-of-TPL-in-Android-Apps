@@ -3,7 +3,7 @@
 from output_pdf import main as m
 
 
-def main():
+def inject_text():
     prelude = []
     list1 = []
     list2 = []
@@ -21,4 +21,4 @@ def main():
     m('test_report_1', True, kwargs_0=prelude, kwargs_1=list1, kwargs_2=list2, kwargs_3=list3, kwargs_4=list4)
 
 
-main()
+inject_text()
