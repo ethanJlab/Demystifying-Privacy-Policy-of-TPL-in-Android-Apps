@@ -60,8 +60,9 @@ keyword_list = ["email",
                 "password",
                 "network"]
 
-
-def main(results_file):
+def get_data_flow_results(results_file):
+    ret = ""
+    output_list = []
     statistics = {}
     tpl_access_user_data = {}
     trace = {}
@@ -90,6 +91,7 @@ def main(results_file):
                     statistics[data_type] = []
                 statistics[data_type].append(tpl_name)
                 print(data_api + '\t' + line)
+                output_list.append(data_api + '\t' + line)
                 #
                 if tpl_name not in tpl_access_user_data:
                     tpl_access_user_data[tpl_name] = []
@@ -112,8 +114,13 @@ def main(results_file):
     for i in statistics:
         data_statistic[i] = len(statistics[i])
     tmp = sorted(data_statistic.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
-    for i in tmp: print(i)
+    for i in tmp:
+        print(i)
+        output_list.append(i)
+        ret += str(i) + " "
+    return output_list
 
-if __name__ == '__main__':
-    TPL_data_flow_results_folder = "../Results/TPL_binary_results"
-    main(TPL_data_flow_results_folder)
+
+# if __name__ == '__main__':
+#     TPL_data_flow_results_folder = "../Results/TPL_binary_results"
+#     main(TPL_data_flow_results_folder)

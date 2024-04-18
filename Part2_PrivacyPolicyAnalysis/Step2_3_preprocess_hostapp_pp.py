@@ -9,7 +9,7 @@ from Part2_PrivacyPolicyAnalysis.html_process_util import processFile
 from Utils import check_folder
 
 
-def main(host_app_pp_folder, save_folder):
+def preprocess_hostapp_pp(host_app_pp_folder, save_folder):
     check_folder(save_folder)
     for tpl_category in os.listdir(host_app_pp_folder):
         path_1 = os.path.join(host_app_pp_folder, tpl_category)
@@ -24,9 +24,6 @@ def main(host_app_pp_folder, save_folder):
                     pp_file = os.path.join(path_2, html_file)
                     processFile(pp_file, save_folder_1)
                     break
+        print("Pre-processed host app privacy policies in " + tpl_category + " have been saved")
 
 
-if __name__ == '__main__':
-    host_app_pp_folder = '/dataset/host_app_pp'
-    pp_save_folder = '../Results/preprocessed_hostapp_pp/'
-    main(host_app_pp_folder, pp_save_folder)

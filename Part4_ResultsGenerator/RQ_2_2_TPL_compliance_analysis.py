@@ -73,7 +73,7 @@ data_map = {
     "getUserName": "username"
 }
 
-
+output_list = []
 def get_tpl_name_map_old(tar_folder):
     kz_map = {}
     for tpl_type in os.listdir(tar_folder):
@@ -209,7 +209,11 @@ def get_tpl_pp_data(results_folder):
         tpl = tpl_name.lower().replace('.txt', '')
         app_info_pp[tpl] = []
         f = open(file_name, 'r')
-        data = f.readlines()
+        data = ""
+        try:
+            data = f.readlines()
+        except:
+            return "Data Not Fully Processed"
         for tmp in data:
             if tmp.startswith('\t'):
                 continue
@@ -250,15 +254,16 @@ def get_tpl_ss_data(target_folder):
     return app_info_ss
 
 
-if __name__ == '__main__':
-    tpl_name_map = get_tpl_name_map('./TPL_package_mapping/')
-    app_info_ss_tmp = get_tpl_ss_data('../Results/TPL_binary_results')
-    app_info_pp_tmp = get_tpl_pp_data('../Results/TPL_pp_analysis_results')
+#if __name__ == '__main__':
+def TPL_compliance_analysis():
+    tpl_name_map = get_tpl_name_map('Part4_ResultsGenerator/TPL_package_mapping/')
+    app_info_ss_tmp = get_tpl_ss_data('Results/TPL_binary_results')
+    app_info_pp_tmp = get_tpl_pp_data('Results/TPL_pp_analysis_results')
     #
     app_info_pp = {}
-    for tpl in app_info_pp_tmp:
-        if len(app_info_pp_tmp[tpl]) != 0:
-            app_info_pp[tpl] = app_info_pp_tmp[tpl]
+    # for tpl in app_info_pp_tmp:
+    #     if len(app_info_pp_tmp[0]) != 0:
+    #         app_info_pp[tpl] = app_info_pp_tmp[tpl]
     app_info_ss = {}
     for tpl in app_info_ss_tmp:
         if len(app_info_ss_tmp[tpl]) > 0:
@@ -279,10 +284,14 @@ if __name__ == '__main__':
                         miss_disclose_compliance[tpl_name] = []
                     miss_disclose_compliance[tpl_name].append(i)
                     print("%s missing disclose %s in its privacy policy." % (tpl_name, i))
+                    output_list.append("%s missing disclose %s in its privacy policy." % (tpl_name, i))
         else:
             tpl_no_pp.append(tpl_name)
     print("TPLs that mis disclose data usage:")
+    output_list.append("TPLs that mis disclose data usage:")
     # for i in miss_disclose_compliance:
     #     print(i)
-    print("# TPLs that miss disclosing data usage %d / %d = %f" % (
+    output_list.append("# TPLs that miss disclosing data usage %d / %d = %f" % (
         len(miss_disclose_compliance), len(app_info_ss), len(miss_disclose_compliance) / len(app_info_ss)))
+    print(output_list)
+    return output_list

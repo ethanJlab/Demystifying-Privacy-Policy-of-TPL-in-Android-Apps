@@ -59,9 +59,10 @@ def get_statistic_data(statistics_file):
     return data
 
 
-if __name__ == '__main__':
-    fcg_folder = '../Part3_BinaryFilesAnalysis/ATPChecker/FCG_Compare'
-    statistics = '../Part3_BinaryFilesAnalysis/ATPChecker/fcg_statistic.csv'
+# if __name__ == '__main__':
+def generate_FCG_evaluation():
+    fcg_folder = 'Part3_BinaryFilesAnalysis/ATPChecker/FCG_Compare'
+    statistics = 'Part3_BinaryFilesAnalysis/ATPChecker/fcg_statistic.csv'
     data_sta = get_statistic_data(statistics)
     data_fcg = analyze_fcg_file(fcg_folder)
 
@@ -106,4 +107,8 @@ if __name__ == '__main__':
 
     #
     plt.grid(axis='both', linestyle='--')
+    plt.savefig('FCG_eval.png')
     plt.show()
+
+    # return the path of the generated figure
+    return 'FCG_eval.png'

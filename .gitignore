@@ -2,6 +2,7 @@ Results/*
 __pycache__/*
 DownloadAPK/*
 *.txt
+!test_input.txt
 *.apk
 *.zip
 *.[0-9][0-9][0-9]
@@ -12,8 +13,17 @@ DownloadAPK/*
 *.aar
 *.htm
 *.pdf
+!report.pdf
+!test_report_1.pdf
+!test_report_2.pdf
+!test_report_3.pdf
 *.docx
 *.xml
 *iml
 *.filepart
 *.shtml
+*.pyc
+*.log
+Code.iml
+misc.xml
+vcs.xml
